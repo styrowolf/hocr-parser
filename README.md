@@ -13,7 +13,7 @@ The parser does not validate if the file adheres to the hOCR specification. It c
 Licensed under either of
 
 - [Apache License v2.0](LICENSE-APACHE)
-- [MIT license](LICENSE-MIT)
+- [MIT License](LICENSE-MIT)
 
 at your option.
 
