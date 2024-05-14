@@ -4,7 +4,7 @@
 //! 
 //! ## Design 
 //! 
-//! This parser uses [`roxmltree`](https://github.com/RazrFalcon/roxmltree) to parse the XHTML. It simplifies provides easy access to the hOCR data embedded through the `HOCR` and `Element` structs, as well as their "borrowed" counterparts to prevent allocating for property names.
+//! This parser uses [`roxmltree`] to parse the XHTML. It simplifies provides easy access to the hOCR data embedded through the [`HOCR`] and [`Element`] structs, as well as their "borrowed" counterparts ([`HOCRBorrowed`], [`ElementBorrowed`]) to prevent allocating for property names.
 //! 
 //! The parser does not validate if the file adheres to the hOCR specification. It checks required metadata and validity of hOCR element and property names but does not check property values.
 
