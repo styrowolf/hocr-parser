@@ -1,0 +1,25 @@
+[package]
+name = "hocr-parser"
+version = "0.1.0"
+edition = "2021"
+authors = ["Oğuz Kurt"]
+description = "A parser for the hOCR format"
+homepage = "https://github.com/styrowolf/hocr-parser"
+repository = "https://github.com/styrowolf/hocr-parser"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["hOCR", "ocr", "tesseract", "parser", "library"]
+categories = ["parser-implementations"]
+exclude = [
+    "examples/data/*"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+roxmltree = "0.19.0"
+serde = { version = "1", features = ["derive"], optional = true }
+thiserror = "1"
+
+[features]
+serde = ["dep:serde"]
